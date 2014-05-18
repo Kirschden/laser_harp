@@ -17,12 +17,18 @@ Max MSP
 The UPD packet can control whatever parameters of sound you would like! Change the UPD port at run time to send values to different Max patches and add new layers of sound. In the demo video, drum sequences (the three beams controlling kick, snare, closedHH respectively) are controlled with hand-height. Bell-like samples are triggered at different playback speeds based on hand-height (effecting the pitch). Lastly, an additive synthesizer is played with hand-height varying the fundamental frequency (harmonics change accordingly to maintain relationship with fundamental) to create pitch bending/glissando.
 
 To make your own, you'll need:
-A webcam and necessary drivers (I used the PS3Eye)
-Some laser diodes and appropriate voltage to power them (AA batteries should do)
-OpenFrameworks -> http://openframeworks.cc/download/
-Ensure ofxOpenCv, ofxOsc and ofxXmlSettings addons are included
-Max MSP (they offer a 30 day free trial -> http://cycling74.com/downloads/)
-...or you can give Pure Date a whirl. It's open source!
+
+1. A webcam and necessary drivers (I used the PS3Eye)
+
+2. Some laser diodes and appropriate voltage to power them (AA batteries should do)
+
+3. OpenFrameworks -> http://openframeworks.cc/download/
+
+  Ensure ofxOpenCv, ofxOsc and ofxXmlSettings addons are included
+
+  Max MSP (they offer a 30 day free trial -> http://cycling74.com/downloads/)
+
+  ...or you can give Pure Date a whirl. It's open source!
 
 Enjoy!
 
