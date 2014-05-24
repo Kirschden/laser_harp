@@ -24,7 +24,7 @@ To make your own, you'll need:
 
 3. OpenFrameworks -> http://openframeworks.cc/download/
 
-  Ensure ofxOpenCv, ofxOsc and ofxXmlSettings addons are included
+  Ensure ofxOpenCv, ofxOsc and ofxXmlSettings addons are included in IDE
 
   Max MSP (they offer a 30 day free trial -> http://cycling74.com/downloads/)
 
