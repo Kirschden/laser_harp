@@ -58,6 +58,8 @@ void beam::set(){
 
 //---------------------------
 void beam::reset(){
+    //value is only reset if no beam has been detected for trig.thresh frames
+    //this prevents glitches or accidental successive triggers
     if(trig.count > 0) trig.count--;
     else isON = false;
     dist.min = dist.thresh;
@@ -65,6 +67,6 @@ void beam::reset(){
 
 //---------------------------
 void beam::updateBeam(){
-    vec_norm = (point_high - point_low).getNormalized();
-    dist_config_points = point_high.distance(point_low);
+    vec_norm = (point_high - point_low).getNormalized(); //normalized beam vector
+    dist_config_points = point_high.distance(point_low); //distance between configuration points
 }

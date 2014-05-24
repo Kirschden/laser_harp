@@ -16,9 +16,14 @@ void laserTracker::setup(){
 	blue.allocate(320,240);
 	binaryOut.allocate(320,240);
 	
-	bLearnBg = true;
-    bRemoveBg = true;
+	bLearnBg = true; // use current frame as background
+    bRemoveBg = true; // remove background image
 	greyThresh = 80;
+    
+    //the reflected laser will cause saturation in the image
+    //set these values for the current lighting situation
+    //for low ambient lighting, setting R, G, and B thresh to max (254) will easily remove any background and cleanly detect the lasers
+    //for higher ambient lighting, lower B and G thresh to allow for larger contours
     redThresh = 254;
     blueThresh = 0;
     greenThresh = 0;

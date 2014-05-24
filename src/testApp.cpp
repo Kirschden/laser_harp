@@ -177,6 +177,10 @@ void testApp::keyPressed(int key){
                 dist_thresh += 0.1;
                 for(int i = 0; i < NUM_BEAMS; i++) myBeam[i]->setDistThresh(dist_thresh);
                 break;
+            // these are the keys assigned to setting config points
+            // the lower config point of beam #1 is set by pressing '1'
+            // the higher config point of beam #1 is set by pressing 'SHIFT + 1'
+            // fill this in for the number of laser beams you are using (currently 3)
             case '1':
                 if(maxArea){
                     myBeam[0]->setBeamLow(currentPoint);
